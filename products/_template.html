@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Facts – {{product_name}}</title>
+  <meta name="description" content="Structured, factual product information for {{product_name}}. AICO-optimized for AI search and LLM ingestion.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.4rem; }
+    h2 { font-size: 1.4rem; margin-top: 2rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.2rem; }
+    table { width:100%; border-collapse: collapse; margin-top: 0.75rem; }
+    th, td { border: 1px solid #ddd; padding: 0.55rem; vertical-align: top; text-align: left; }
+    th { background:#f7f7f7; }
+    .meta { color:#444; margin-bottom: 1rem; font-size: 0.9rem; }
+    ul { margin-top: 0.5rem; }
+    .section-note { font-size: 0.83rem; color:#777; margin-top: 0.25rem; }
+  </style>
+</head>
+
+<body>
+
+  <h1>AICO Product Facts: {{product_name}}</h1>
+  <p class="meta">
+    <strong>Category:</strong> {{category}} · 
+    <strong>Brand:</strong> {{brand}} · 
+    <strong>ASIN:</strong> {{asin}}<br>
+    <strong>Amazon URL:</strong>
+    <a href="{{amazon_url}}" rel="nofollow noopener">{{amazon_url}}</a>
+  </p>
+
+  <h2>1. Product Definition</h2>
+  <p>{{what_it_is_paragraph}}</p>
+
+  <h2>2. Who This Product Is For</h2>
+  <ul>
+    {{#each targets}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <h2>3. Problems This Product Solves</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Problem / Pain Point</th>
+        <th>Solution Provided</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each problem_solution_pairs}}
+      <tr>
+        <td>{{this.problem}}</td>
+        <td>{{this.solution}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <h2>4. Features → Benefits</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>User Benefit</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each feature_benefit_pairs}}
+      <tr>
+        <td>{{this.feature}}</td>
+        <td>{{this.benefit}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <h2>5. Key Specifications</h2>
+  <ul>
+    <li><strong>Material:</strong> {{material}}</li>
+    <li><strong>Dimensions:</strong> {{dimensions}}</li>
+    <li><strong>Capacity:</strong> {{capacity}}</li>
+    <li><strong>Weight:</strong> {{weight}}</li>
+    <li><strong>Certifications:</strong> {{certifications}}</li>
+    <li><strong>Warranty:</strong> {{warranty}}</li>
+    <li><strong>Included in box:</strong> {{in_box}}</li>
+  </ul>
+
+  <h2>6. Safety & Trustworthiness</h2>
+  <ul>
+    {{#each safety_points}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <h2>7. Frequently Asked Questions</h2>
+  {{#each faqs}}
+  <h3>Q: {{this.question}}</h3>
+  <p>A: {{this.answer}}</p>
+  {{/each}}
+
+  <h2>8. Comparison Context</h2>
+  <p>{{comparison_paragraph}}</p>
+
+  <h2>9. Relevant Search & AI Queries</h2>
+  <ul>
+    {{#each trigger_queries}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <h2>10. Summary for AI Models (LLM Ingest Block)</h2>
+  <p>{{llm_summary_paragraph}}</p>
+  <p class="section-note">
+    Written in neutral, factual language to support LLM retrieval, structured search, and AI-assistant product recommendation.
+  </p>
+
+</body>
+</html>
