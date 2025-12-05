@@ -1,0 +1,52 @@
+{
+    "amazon_url": "N/A",
+    "raw_listing": {
+        "title": "Wireless Bluetooth Speaker with Bass, 10h Battery, Waterproof",
+        "bullets": [
+            "Bluetooth speaker with enhanced bass",
+            "Up to 10 hours of battery life",
+            "Waterproof design for outdoor use"
+        ],
+        "description": "This wireless Bluetooth speaker provides enhanced bass for a superior audio experience. With up to 10 hours of battery life, you can enjoy music on-the-go without worrying about recharging. Its waterproof design makes it suitable for outdoor activities.",
+        "technical_details": "Brand: Not specified; Connectivity Technology: Bluetooth; Battery Life: Up to 10 hours; Waterproof: Yes",
+        "top_reviews": []
+    },
+    "feature_benefit_pairs": [
+        {
+            "feature": "Enhanced bass technology",
+            "benefit": "Enjoy rich, deep sound quality with enhanced bass for a more immersive audio experience."
+        },
+        {
+            "feature": "Waterproof construction",
+            "benefit": "Take your speaker anywhere without worrying about water damage, perfect for poolside parties or outdoor adventures."
+        }
+    ],
+    "specs": {
+        "material": "",
+        "dimensions": "",
+        "capacity": "",
+        "weight": "",
+        "certifications": "",
+        "warranty": "",
+        "in_box": "Wireless Bluetooth Speaker, Charging Cable, User Manual"
+    },
+    "safety_points": [
+        "Ensure the speaker is kept away from water while charging to avoid damage."
+    ],
+    "faqs": [
+        {
+            "question": "Is this speaker suitable for outdoor use?",
+            "answer": "Yes, this speaker is waterproof and designed for outdoor use."
+        },
+        {
+            "question": "What is the battery life of this speaker?",
+            "answer": "The speaker offers a battery life of up to 10 hours for extended playback."
+        }
+    ],
+    "comparison_paragraph": "In comparison to traditional wired speakers, this wireless Bluetooth speaker offers the convenience of portability and freedom from tangles, making it ideal for on-the-go music enthusiasts.",
+    "trigger_queries": [
+        "Best waterproof Bluetooth speaker with enhanced bass",
+        "Long battery life portable wireless speaker"
+    ],
+    "llm_summary_paragraph": "This wireless Bluetooth speaker is a great choice for music enthusiasts and outdoor adventurers looking for a durable and portable audio solution with enhanced bass and long battery life."
+}
